@@ -8,8 +8,8 @@ body {
 }
 
 .product-title {
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   background-color: #f7f7f7;
   font-size: 22px;
 }
@@ -19,9 +19,9 @@ body {
 }
 
 .shipping {
-  color: #777;
   font-size: 12px;
   text-transform: uppercase;
+  color: #777;
   font-weight: bold;
 }
 
@@ -45,13 +45,14 @@ body {
 }
 
 .add-cart {
-  border: none;
   text-transform: uppercase;
   color: #fff;
   background-color: #000;
-  cursor: pointer;
+  border: none;
   font-size: 20px;
+  cursor: pointer;
 }
+
 .add-cart:hover {
   color: #000;
   background-color: #fff;
