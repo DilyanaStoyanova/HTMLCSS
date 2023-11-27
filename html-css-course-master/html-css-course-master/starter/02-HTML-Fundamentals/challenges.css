@@ -10,20 +10,15 @@ body {
 }
 
 .product {
-  width: 808px;
+  width: 825px;
   margin: 50px auto;
   border: 4px solid #000;
   position: relative;
 }
 
-.container {
-  width: 240px;
-  margin-right: 40px;
-  float: left;
-}
-
 .image-container {
-  height: 240px;
+  flex: 0 0 250px;
+  height: 250px;
 }
 
 img {
@@ -32,8 +27,13 @@ img {
   object-fit: cover;
 }
 
-.last {
-  margin-right: 0;
+.info-container,
+.details-container {
+  flex: 0 0 30%;
+}
+
+.details-container {
+  padding-right: 16px;
 }
 
 .product-title {
@@ -44,10 +44,15 @@ img {
   font-size: 22px;
 }
 
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
 .price {
   font-size: 24px;
-  float: left;
-  margin: 16px 0;
 }
 
 .shipping {
@@ -55,8 +60,6 @@ img {
   text-transform: uppercase;
   color: #777;
   font-weight: bold;
-  float: right;
-  margin: 28px 0;
 }
 
 .sale {
@@ -90,11 +93,14 @@ img {
   text-decoration: none;
 }
 
+.colors {
+  display: flex;
+  gap: 16px;
+}
+
 .color {
-  display: inline-block;
   width: 20px;
   height: 20px;
-  margin-right: 8px;
 }
 
 .color:last-child {
@@ -161,4 +167,10 @@ img {
 .add-cart:hover {
   color: #000;
   background-color: #fff;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
