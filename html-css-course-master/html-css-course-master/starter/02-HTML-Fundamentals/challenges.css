@@ -9,6 +9,12 @@ body {
   line-height: 1.4;
 }
 
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .product {
   width: 825px;
   margin: 50px auto;
@@ -78,7 +84,6 @@ img {
 
 .description {
   margin-bottom: 8px;
-  clear: both;
 }
 
 .more-info:link,
@@ -167,10 +172,4 @@ img {
 .add-cart:hover {
   color: #000;
   background-color: #fff;
-}
-
-.content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
 }
