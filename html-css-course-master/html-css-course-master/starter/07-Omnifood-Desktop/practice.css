@@ -26,7 +26,9 @@ Bold: 700
 2.Color
 
 ---Primary #e67e22
----Tints #fdf2e9
+---Tints 
+#fdf2e9
+#fae5d3
 ---Shades #cf711f
 ---Accents
 ---Greys
@@ -37,6 +39,7 @@ Bold: 700
 
 6.Border-radius
 default: 9px
+medium: 11px
 
 7.Whitespaces (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -72,23 +75,29 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
-.grid--2--cols {
+.grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid--3--cols {
+.grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid--4--cols {
+.grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--center-v {
+  align-items: center;
+}
+
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
@@ -104,6 +113,12 @@ body {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .subheading {
@@ -151,6 +166,10 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }
 
 /****************/
@@ -270,10 +289,161 @@ body {
   font-weight: 700;
 }
 
+/****************/
+/*FEATURED IN SECTION*/
+/****************/
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/****************/
+/*HOW IT WORKS*/
+/****************/
+
 .section-how {
   padding: 9.6rem 0;
 }
 
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
 .step-img {
-  width: 50%;
+  width: 35%;
+}
+
+/****************/
+/*SECTION MEAL*/
+/****************/
+
+.section-meal {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  border-radius: 11px;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.0725);
+  overflow: hidden;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #fcc419;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
 }
