@@ -678,7 +678,7 @@ strong {
 }
 
 /****************/
-/*PRICING SECTION*/
+/*CTA SECTION*/
 /****************/
 
 .section-cta {
@@ -695,6 +695,22 @@ strong {
   overflow: hidden;
 }
 
+.cta-text-box {
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
@@ -704,4 +720,11 @@ strong {
     url(img/eating.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 }
