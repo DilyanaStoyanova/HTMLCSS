@@ -60,7 +60,7 @@ allLinks.forEach(function (link) {
 });
 
 ///////////////////////////////////////////////////////////
-// Sticky navigation
+// STICKY NAVIGATION
 const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
